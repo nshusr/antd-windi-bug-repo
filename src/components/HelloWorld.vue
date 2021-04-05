@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="">{{ msg }}</h1>
 
   <p>
     Recommended IDE setup:
@@ -22,7 +22,7 @@
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 
-  <a-button type="primary" @click="count++">count is: {{ count }}</a-button>
+  <a-button class="my-2" type="primary" @click="count++">count is: {{ count }}</a-button>
   <p>
     Edit
     <code class="bg-gray-200">components/HelloWorld.vue</code> to test hot module replacement.
@@ -48,11 +48,6 @@ export default defineComponent({
 
 <style scoped>
 a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
+  @apply text-green-500 hover:(text-green-600);
 }
 </style>

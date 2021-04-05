@@ -1,15 +1,6 @@
 <template>
-  <img class="mx-auto" alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <a-layout>
-    <a-row>
-      <a-col :span="6" v-for="it in 4">
-        <a-card>
-          {{ it}}
-        </a-card>
-      </a-col>
-    </a-row>
-  </a-layout>
+  <img class="mx-auto pt-16" alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite + AntDesignVue + WindiCSS" />
 </template>
 
 <script lang="ts">
@@ -26,11 +17,6 @@ export default defineComponent({
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  @apply text-center font-sans;
 }
 </style>
